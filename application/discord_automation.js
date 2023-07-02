@@ -30,6 +30,10 @@ function onSubmit(e) {
           realmName = answer
         }
 
+        if (question.match("Class and Spec")) {
+            classSpec = answer
+        }
+
         if (question.match("Please link your Warcraft Logs")) {
           answer = "[Warcraft Logs Link](" + answer + ")"
         }
@@ -55,10 +59,10 @@ function onSubmit(e) {
         }
     }
 
-    var title = charName + " - " + realmName
+    var title = charName + " - " + classSpec
     const embeds = [];
 
-    // Some applications can be quite long, and discord limits embeds to 6k characters. The while loop below will loop 
+    // Some applications can be quite long, and discord limits embeds to 6k characters. The while loop below will loop
     // through the response and create a "Question Title (Cont.)" to continue the response.
     while (items.length > 0) {
         const currentEmbedItems = items.splice(0, MAX_EMBED_LENGTH);
