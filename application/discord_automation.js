@@ -60,6 +60,9 @@ function onSubmit(e) {
     }
 
     var title = charName + " - " + classSpec
+    if (title.length > 100) {
+        title = title.substring(0,100);
+    }
     const embeds = [];
 
     // Some applications can be quite long, and discord limits embeds to 6k characters. The while loop below will loop
