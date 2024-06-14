@@ -1,4 +1,4 @@
-const POST_URL = "WEBHOOK_URL_HERE";
+const POST_URL = "WEBHOOK_URL_HERE?wait=true";
 const MAX_EMBED_LENGTH = 6000;
 const MAX_FIELD_VALUE_LENGTH = 1024;
 const MAX_FIELDS_PER_EMBED = 25;
@@ -9,7 +9,7 @@ function onSubmit(e) {
     let charName = "";
     let realmName = "";
     let classSpec = "";
-    let threadId = ""; // Store the thread ID for the first message
+    let threadId // Store the thread ID for the first message
 
     for (const responseAnswer of response) {
         const question = responseAnswer.getItem().getTitle();
@@ -117,14 +117,41 @@ function onSubmit(e) {
 
     console.log("Total embeds created: " + embeds.length);
 
-    // Send each embed as a separate message
-    for (let i = 0; i < embeds.length; i++) {
+    let firstEmbed = embeds[0];
+    let threadPayload = {
+        content: null,
+        embeds: [firstEmbed],
+        username: "New App Submission",
+        thread_name: title,
+    };
+    let threadPayloadString = JSON.stringify(threadPayload);
+    let threadOptions = {
+        method: "post",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        payload: threadPayloadString,
+    };
+
+    try {
+        const threadResponse = UrlFetchApp.fetch(POST_URL, threadOptions);
+        console.log("Thread response: ", threadResponse);
+        const threadResponseData = JSON.parse(threadResponse.getContentText());
+        console.log("Thread response data: ", threadResponseData);
+        threadId = threadResponseData.channel_id;
+    } catch (error) {
+        console.log("Error: " + error.message);
+    }
+
+    // Send each embed as a separate message - seeing we have the threadId now, we need to change the post url
+    let subsequentUri = POST_URL + "&thread_id=" + threadId;
+    for (let i = 1; i < embeds.length; i++) {
         const embed = embeds[i];
         const payload = {
             content: null,
             embeds: [embed], // Sending only one embed in each payload
             username: "New App Submission",
-            thread_name: i === 0 ? title : undefined, // Include thread_name for the first message only
+            thread_id: threadId, // Include thread_name for the first message only
         };
 
         const payloadString = JSON.stringify(payload);
@@ -139,9 +166,7 @@ function onSubmit(e) {
         };
 
         try {
-            const response = UrlFetchApp.fetch(POST_URL, options);
-            const responseData = JSON.parse(response.getContentText());
-            threadId = responseData.thread_id || threadId; // Update thread ID for subsequent messages
+            UrlFetchApp.fetch(subsequentUri, options) // Update thread ID for subsequent messages
         } catch (error) {
             console.log("Error: " + error.message);
         }
