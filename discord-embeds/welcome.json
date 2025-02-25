@@ -1,0 +1,34 @@
+{
+  "content": null,
+  "embeds": [
+    {
+      "description": "### _Welcome to Death Jesters & Zeroes to Heroes! If you are seeing this screen you have made it to our server. Please use the ticketing system below to obtain access to the full server or for a guild invite._",
+      "color": 18431,
+      "author": {
+        "name": "Sparty",
+        "icon_url": "https://cdn.discordapp.com/avatars/80157908083412992/506b2a9c75346089c9856f61cbba9be5.webp?size=160"
+      }
+    },
+    {
+      "title": "About Us",
+      "description": "We are a gaming community focused on providing a welcoming and friendly environment of like-minded people who play World of Warcraft and other games. Since our inception as a WoW guild on Stormrage-US in January 2005, we have been building relationships that span across many different walks of life, time zones, and games. In May of 2015 we expanded our community and created additional WoW guilds to welcome more players. You'll also find a home for your Classic WoW and FFXIV characters here. This community has flourished over the past few years thanks to the wonderful people here and we are excited that you have chosen to join us!\n\n**[Death Jesters](https://guildsofwow.com/death-jesters)** is the original legacy raiding guild whereas **[Zeroes to Heroes](https://guildsofwow.com/zth)** offers experiences for every level of player; from pet collectors to hardcore mythic raiders, we have what you are looking for. We hold community events, guild contests, and field many raid teams! We are primarily based on Stormrage-US, though you might see some folks from our legacy Horde guild on Illidan-US. We use the [EK XFaction](https://www.curseforge.com/wow/addons/ek-xfaction) addon to communicate between all our Retail WoW guilds. Out-of-game communication is done through Discord. Our Classic WoW guild is Death Jesters on Pagle-US. We also have a FFXIV Free Company on Jenova. Check out our Other Interests category for more games and hobbies!",
+      "color": 1033871
+    },
+    {
+      "title": "Guild Leadership",
+      "description": "* **Guild Leader** - <MANUALLY ADD @ID>\n* **Officers** _(aka Senior Community Leaders)_ - <MAUNALLY ADD @IDS>\n* **Veterans** _(aka Community Leaders)_ - Too many to list individually, this group helps guide and maintain the community. Many are current or former raid team leaders, and/or have exemplified the community ideals. \n* **Champions** - This group of volunteers assists in handling the large amount of guild invites the community receives.\n* **Raid Leaders** - This group includes any raid team leadership.\n\nIf you ever have any issues, whether it be personal issues, guild issues, or issues with another player or officer, we ask that you speak to a veteran, officer, or Sparty to remedy the situation. Speak to someone in leadership you feel comfortable chatting with and they will ensure your issues are addressed and heard. If you are unhappy with another player in the guild, please speak with a veteran or officer.",
+      "color": 13022232
+    },
+    {
+      "title": "Community Rules & Code of Conduct",
+      "description": "### ***Be respectful towards all members and non-members. Know that your words and actions represent not only you, but all of the Death Jesters and Zeroes to Heroes community!***\n\n* Absolutely NO posting of racism, sexism, hate speech, slander, pornographic material, or disturbing content. Keep it work safe. \n* Absolutely NO politics or religion (Dinner table topics).\n* Don’t post things that are illegal or break either the Discord or World of Warcraft Terms of Service, or any other game/company.\n* Keep posts within the proper channels. (ie: food pictures in the food channel, memes in the memes/jokes channel)\n* Discussions and disagreements are encouraged when done respectfully.\n* Privacy & Confidentiality: Information from this Discord should not be shared with players outside of the community. That includes, but is not limited to, streaming and screenshots. Any information (within reason) shared or conversations held in this discord should be considered confidential unless stated otherwise. Topics can be escalated, but not shared outside their intended scope. Please be respectful of each other’s privacy!\n\n**__Voice Channels__**\n*We are all mature here -- it's important that we act that way. Even in the heat of battle, stay respectful toward your fellow guild members.*\n\n* Push to talk enabled unless specified by raid lead or agreed upon by group\n* No annoying, loud, or high pitched noises\n* If possible, reduce the amount of background noise when speaking on voice chat. Try out the Discord noise suppression feature!\n### **Violations of our code of conduct will be addressed by the senior leadership team as needed, openly and transparently, without regard to tenure or rank.**\n\n### In short: **Be Excellent To Each Other**.",
+      "color": 14505698
+    },
+    {
+      "title": "Social Media Guidelines",
+      "description": "_We ask that our members not only represent themselves, but our community, on social media. Please keep community-related issues within the community._\n\nYou can follow us online on [Twitter](https://twitter.com/DeathJestersZTH)!\n\nWe have a number of community-approved streamers on our DJ and ZtH [stream team](https://www.twitch.tv/team/djsandzth) that enjoy showcasing our community and the various raid teams. ZtH is not here to censor you, but we do ask that as a representative of our guild, you follow the following guidelines when streaming:\n* Make sure that guild chat is covered at all times, and don’t show Discord _([Privacy Weak Aura](https://wago.io/TwS7F4ZOC))_\n* Do not stream voice-comms without the group/team's permission.\n* Respect confidentiality, whether it’s guild related or otherwise. Discussions and posts in Guild-only mediums (Discord, G-Chat, etc) are considered confidential.\n* Represent Zeroes to Heroes with excellence.\n* More streaming information is available in the <#489902812612788225> channel pins.",
+      "color": 13193553
+    }
+  ],
+  "attachments": []
+}
